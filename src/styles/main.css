@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;600&display=swap");
+
+@tailwind base;
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply underline;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.font-2 {
+  font-family: "Bebas Neue", cursive;
+}
+
+.menu-active-underline {
+  text-decoration: theme("colors.secondary") underline;
+  text-underline-offset: 5px;
+}
+
+.footer-phone-underline {
+  text-decoration: theme("colors.secondary") underline 2px;
+  text-underline-offset: 5px;
+}
+
+.banner-gradient {
+  background: linear-gradient(
+    87.41deg,
+    rgba(230, 156, 36, 0.01) 20.03%,
+    rgba(236, 180, 89, 0.15) 48.78%,
+    rgba(242, 203, 140, 0) 80.95%
+  );
+}
+
+.card-bgcolor {
+  background: #DEA54B33;
+}
+
+.card-header-clip {
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.card-shadow{
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Sora', sans-serif; 
+*/
